@@ -10,11 +10,11 @@ import java.util.Optional;
 
 @RestController
 @RequestMapping("/api/runs")
-class RunController {
+class RunJsonDataLoader {
 
     private final JdbcRunRepository runRepository;
 
-    RunController(JdbcRunRepository runRepository) {
+    RunJsonDataLoader(JdbcRunRepository runRepository) {
         this.runRepository = runRepository;
     }
 
